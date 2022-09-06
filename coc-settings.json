@@ -1,0 +1,16 @@
+## WHEN CLONING, DELETE THE LINES WITH "##" IN FRONT OF THEM
+## NOTE: This requires clangd on install
+## NOTE: sudo apt-get install -y clangd
+## NOTE: clone into /home/<REPLACE_WITH_YOUR_NAME>/.vim/
+## NOTE: or just access this file via `:CocConfig` and copy/paste
+{
+    "languageserver": {
+        "clangd": {
+        "command": "clangd",
+        "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+        "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+        }
+    },
+
+    "suggest.noselect": true
+}

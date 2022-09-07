@@ -1,5 +1,3 @@
-" Requires vim-plug (https://github.com/junegunn/vim-plug)
-
 imap jj <Esc>
 let mapleader = "\<Space>"
 set nowrap
@@ -14,9 +12,10 @@ set wildmenu
 set ma
 
 call plug#begin()
+Plug 'preservim/nerdcommenter' 
+Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tpope/vim-commentary'
 Plug 'sainnhe/everforest'
 Plug 'joshdick/onedark.vim'
 Plug 'SirVer/ultisnips'
@@ -28,7 +27,15 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
-" Clears highlighting after search
+" Navigate vertical splits
+nnoremap <S-l> <C-w>l 
+nnoremap <S-h> <C-w>h 
+nnoremap <S-k> <C-w>k 
+nnoremap <S-j> <C-w>j 
+
+" nerdcommenter space enhancement
+let NERDSpaceDelims = 1
+"" Clears highlighting after search
 map <leader>h :set hlsearch!<cr>
 " Enables the NERDtree menu with <Space, n>
 nnoremap <leader>n :NERDTreeFocus<CR>

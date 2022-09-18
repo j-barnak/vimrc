@@ -12,6 +12,8 @@ set wildmenu
 set ma
 
 call plug#begin()
+Plug 'pangloss/vim-javascript' 
+Plug 'vim-autoformat/vim-autoformat' 
 Plug 'preservim/nerdcommenter' 
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
@@ -27,14 +29,15 @@ Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
+" Lint files 
+map <leader>f :py3f /home/jared/Installs/clang-format.py<CR>
 " Navigate vertical splits
 nnoremap <S-l> <C-w>l 
 nnoremap <S-h> <C-w>h 
 nnoremap <S-k> <C-w>k 
 nnoremap <S-j> <C-w>j 
-
 " nerdcommenter space enhancement
-let NERDSpaceDelims = 1
+let g:NERDSpaceDelims = 1
 "" Clears highlighting after search
 map <leader>h :set hlsearch!<cr>
 " Enables the NERDtree menu with <Space, n>

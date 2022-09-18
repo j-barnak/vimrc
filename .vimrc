@@ -46,9 +46,9 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 """ COLOR SCHEME SECTION
 set termguicolors
 syntax on
-colorscheme everforest
 set background=dark
 let g:everforest_background = 'medium'
+colorscheme everforest
 
 "" Uncomment for Gruvbox Usage
 " Necessary for gruvbox

@@ -11,13 +11,7 @@ set wildmenu
 " For NERTtree so that I can add directories and files
 set ma
 
-" Install vim plug if not installed
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
-if empty(glob(data_dir . '/autoload/plug.vim'))
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin(~/.vim/plugged')
+call plug#begin()
 Plug 'flazz/vim-colorschemes'
 Plug 'pangloss/vim-javascript' 
 Plug 'vim-autoformat/vim-autoformat' 

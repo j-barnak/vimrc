@@ -12,6 +12,7 @@ set wildmenu
 set ma
 
 call plug#begin()
+Plug 'flazz/vim-colorschemes'
 Plug 'pangloss/vim-javascript' 
 Plug 'vim-autoformat/vim-autoformat' 
 Plug 'preservim/nerdcommenter' 

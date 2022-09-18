@@ -18,7 +18,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin()
+call plug#begin(~/.vim/plugged')
 Plug 'flazz/vim-colorschemes'
 Plug 'pangloss/vim-javascript' 
 Plug 'vim-autoformat/vim-autoformat' 

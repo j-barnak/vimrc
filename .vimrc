@@ -20,7 +20,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sainnhe/everforest'
 Plug 'joshdick/onedark.vim'
-Plug 'SirVer/ultisnips'
 Plug 'wellle/targets.vim'
 Plug 'morhetz/gruvbox' 
 Plug 'easymotion/vim-easymotion'
